@@ -20,20 +20,18 @@ public class GameManager : MonoBehaviour {
     private float Speed;
 
     private float UpgradeCost;
-    private float UpgradeValue;
-    private int   UpgradeCount = 0;
+    private int   UpgradeCount = 1;
 
 	// Use this for initialization
 	void Start () {
+        // Init vars with their base values
         this.Speed = this.StartSpeed;
 
-        this.SpeedValue.text = this.Speed.ToString();
+        this.SpeedValue.text = this.Speed.ToString("0.00");
 
         this.UpgradeCost = this.UpgradeBaseCost;
 
-        this.UpgradeValue = this.UpgradeBaseValue;
-
-        this.UpgradeButtonText.text = this.UpgradeCost.ToString();
+        this.UpgradeButtonText.text = this.UpgradeCost.ToString("0.00");
 	}
 	
 	// Update is called once per frame
@@ -41,7 +39,7 @@ public class GameManager : MonoBehaviour {
         // Update the number every frame
         UpdateNumber();
 
-        // Update the disabled state of the upgrade button
+        // Update the interactable state of the upgrade button
         this.UpgradeButton.interactable = (this.Number >= this.UpgradeCost ? true : false);
     }
 
