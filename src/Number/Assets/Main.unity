@@ -667,7 +667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 0
 --- !u!222 &1092951527
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -705,11 +705,10 @@ MonoBehaviour:
   SpeedValue: {fileID: 1353481445}
   UpgradeButton: {fileID: 1015980874}
   UpgradeButtonText: {fileID: 1092951526}
-  UpgradeBaseCost: 0.5
+  UpgradeBaseCost: 3
   UpgradeCostMultiplier: 1.07
-  UpgradeBaseValue: 0.5
-  UpgradeValueMultiplier: 1.025
-  StartSpeed: 0.1
+  UpgradeBaseValue: 1
+  UpgradeValueMultiplier: 1.05
 --- !u!4 &1130948089
 Transform:
   m_ObjectHideFlags: 0

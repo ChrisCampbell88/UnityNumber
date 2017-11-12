@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour {
     public float  UpgradeCostMultiplier;
     public float  UpgradeBaseValue;
     public float  UpgradeValueMultiplier;
-    public float StartSpeed;
 
     private float Number = 0;
     private float Speed;
@@ -25,7 +24,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         // Init vars with their base values
-        this.Speed = this.StartSpeed;
+        this.Speed = this.UpgradeBaseValue;
 
         this.SpeedValue.text = this.Speed.ToString("0.00");
 
